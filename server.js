@@ -1,10 +1,10 @@
 /* eslint-disable no-implicit-globals */
 'use strict';
 
-const https = require('https');
+const http = require('http');
 const fs = require('fs');
 
-const server = https.createServer((req, res) => {
+const server = http.createServer((req, res) => {
     router(res, req);
     console.log('server has started!');
 });
@@ -23,7 +23,6 @@ function router (req, res) {
         fs.readFile('./home.html', null, (error, data) => {
             if (error) {
                 // output to show if there is an error
-                res.writeHead(404);
                 res.write('opps, there seems to be an error while opening the html file.');
                 console.log('\x1b[31m%s\x1b[0m', `Error:  ${error}`);
             } else {

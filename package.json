@@ -1,0 +1,23 @@
+{
+  "name": "learning_node",
+  "version": "1.0.0",
+  "description": "'Just practicing node'",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GouthamDoddi/learningNode.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Goutham Doddi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GouthamDoddi/learningNode/issues"
+  },
+  "homepage": "https://github.com/GouthamDoddi/learningNode#readme"
+}
