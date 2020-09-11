@@ -1,11 +1,10 @@
-/* eslint-disable no-implicit-globals */
 'use strict';
 
 const http = require('http');
 const fs = require('fs');
 
 const server = http.createServer((req, res) => {
-    router(res, req);
+    router(req, res);
     console.log('server has started!');
 });
 
