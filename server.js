@@ -24,7 +24,7 @@ function router (req, res) {
             if (error) {
                 // output to show if there is an error
                 res.writeHead(404);
-                res.end('opps, there seems to be an error while opening the html file.');
+                res.write('opps, there seems to be an error while opening the html file.');
                 console.log('\x1b[31m%s\x1b[0m', `Error:  ${error}`);
             } else {
                 // output to show if there isn't an error
